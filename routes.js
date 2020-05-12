@@ -21,7 +21,7 @@ module.exports = function (app, io) {
 		res.render('chat');
 	});
 
-	// Initialize a new socket.io application, named 'chat'
+	// Initialize a new socket.io application, named 'chat'.
 	var chat = io.on('connection', function (socket) {
 
 		socket.on('load', (data) => {
